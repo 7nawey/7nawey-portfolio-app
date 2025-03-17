@@ -1,16 +1,13 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { HeroComponent } from './hero/hero.component';
-import { AboutComponent } from './about/about.component';
-import { FooterComponent } from './footer/footer.component';
-import { PortfolioComponent } from './portfolio/portfolio.component';
-import { SkillsComponent } from './skills/skills.component';
+import { RouterModule } from '@angular/router';
+
 @Component({
   selector: 'app-root',
-  imports: [HeroComponent,AboutComponent,FooterComponent,PortfolioComponent,SkillsComponent],
+  standalone: true,
+  imports: [RouterModule], // تأكد من استيراد `RouterModule` لأنه مطلوب
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css']
 })
-export class AppComponent {
-  title = 'portfolio-app';
+export class AppComponent { // ✅ يجب أن يكون هنا `export`
+  title = 'portfolio-app'; // أضف هذه الخاصية إذا كان الاختبار يحتاجها
 }

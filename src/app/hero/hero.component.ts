@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-hero',
-  imports: [],
+  standalone: true, // ✅ تأكد من أنه standalone
+  imports: [RouterModule], // ✅ استيراد RouterModule لاستخدام routerLink
   templateUrl: './hero.component.html',
-  styleUrl: './hero.component.css'
+  styleUrls: ['./hero.component.css'] // ✅ تصحيح الخطأ
 })
-export class HeroComponent {
-
-}
+export class HeroComponent {}
