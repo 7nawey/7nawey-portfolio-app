@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 })
 export class ContactComponent {
   email: string = 'mohamedelhnawey676@gmail.com';
-  phone: string = '+2001200284939';
+  phone: string = '+2001200289439';
   whatsapp: string = 'https://wa.me/2001200284939';
   linkedin: string = 'https://www.linkedin.com/in/mohamed-elhnawey';
   github: string = 'https://github.com/7nawey';
